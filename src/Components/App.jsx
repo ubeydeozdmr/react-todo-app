@@ -6,81 +6,72 @@ import Banner from './Banner.jsx';
 
 const STARTER_DATA = {
   version: 2,
-  todos: [
-    // NOTE: This is just a test object for development.
-    {
-      id: 929307412003,
-      content: 'Run for 5 kilometers',
-      date: 1660329584961,
-      completed: false,
-    },
-    {
-      id: 162381830310,
-      content: 'Check emails',
-      date: 1660329438631,
-      completed: true,
-    },
-    {
-      id: 325332161656,
-      content: 'Pay for rent',
-      date: 1660329420947,
-      completed: false,
-    },
-    {
-      id: 526919297563,
-      content: 'Drink a glass of water',
-      date: 1659808439557,
-      completed: false,
-    },
-    {
-      id: 552267099247,
-      content: 'Wash the dishes',
-      date: 1659808434612,
-      completed: true,
-    },
-    {
-      id: 393829242937,
-      content: 'Buy Minecraft Java&Bedrock Edition',
-      date: 1659808426168,
-      completed: false,
-    },
-    {
-      id: 864336467614,
-      content: "Finish Plato's Republic",
-      date: 1659808404208,
-      completed: false,
-    },
-    {
-      id: 604908128095,
-      content: "Finish Sofie's World",
-      date: 1659808379333,
-      completed: true,
-    },
-  ],
-  // todos: [],
+  // todos: [
+  //   // NOTE: This is just a test object for development.
+  //   {
+  //     id: 929307412003,
+  //     content: 'Run for 5 kilometers',
+  //     date: 1660329584961,
+  //     completed: false,
+  //   },
+  //   {
+  //     id: 162381830310,
+  //     content: 'Check emails',
+  //     date: 1660329438631,
+  //     completed: true,
+  //   },
+  //   {
+  //     id: 325332161656,
+  //     content: 'Pay for rent',
+  //     date: 1660329420947,
+  //     completed: false,
+  //   },
+  //   {
+  //     id: 526919297563,
+  //     content: 'Drink a glass of water',
+  //     date: 1659808439557,
+  //     completed: false,
+  //   },
+  //   {
+  //     id: 552267099247,
+  //     content: 'Wash the dishes',
+  //     date: 1659808434612,
+  //     completed: true,
+  //   },
+  //   {
+  //     id: 393829242937,
+  //     content: 'Buy Minecraft Java&Bedrock Edition',
+  //     date: 1659808426168,
+  //     completed: false,
+  //   },
+  //   {
+  //     id: 864336467614,
+  //     content: "Finish Plato's Republic",
+  //     date: 1659808404208,
+  //     completed: false,
+  //   },
+  //   {
+  //     id: 604908128095,
+  //     content: "Finish Sofie's World",
+  //     date: 1659808379333,
+  //     completed: true,
+  //   },
+  // ],
+  todos: [],
   preferences: {
-    theme: 'os' /* light, dark, os */, //* COMPLETED
-    sortType: 'date' /* date, name */, //* COMPLETED PARTIALLY
-    showTodos: 'all' /* all, active, completed */, //* COMPLETED PARTIALLY
-    sortDesc: false, //* COMPLETED
-    hideBanner: false, //* COMPLETED
-    hideLastDeletedTodoNotifications: false, //* COMPLETED
-    hideSearchBar: false, //* COMPLETED
-    date: 'hide' /* hide, date, time, full */, //* COMPLETED
+    theme: 'os' /* light, dark, os */,
+    sortType: 'date' /* date, name */,
+    showTodos: 'all' /* all, active, completed */,
+    sortDesc: false,
+    hideBanner: false,
+    hideLastDeletedTodoNotifications: false,
+    hideSearchBar: false,
+    date: 'hide' /* hide, date, time, full */,
   },
   user: {
-    firstName: 'Ubeyde', //* COMPLETED
+    firstName: null,
   },
 };
-
-// cache: {
-//   filteredTodos: null, //* COMPLETED (I GUESS)
-//   expandPreferences: false, //* COMPLETED
-//   currentContent: '', //* COMPLETED
-//   searchContent: '', //* COMPLETED
-//   lastDeletedTodo: null,
-//   showLastDeletedTodoNotification: false,
-// },
 
 export default function App() {
   const [data, setData] = useState(
