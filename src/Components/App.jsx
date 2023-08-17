@@ -74,9 +74,19 @@ const STARTER_DATA = {
 };
 
 export default function App() {
-  const [data, setData] = useState(
-    JSON.parse(localStorage.getItem('data')) || STARTER_DATA,
-  );
+  const [data, setData] = useState(() => {
+    const localStorageData = JSON.parse(localStorage.getItem('data'));
+
+    if (localStorageData) {
+      if (localStorageData.version === STARTER_DATA.version) {
+        return localStorageData;
+      } else {
+        return STARTER_DATA;
+      }
+    } else {
+      return STARTER_DATA;
+    }
+  });
 
   useEffect(() => {
     localStorage.setItem('data', JSON.stringify(data));
