@@ -5,9 +5,9 @@ import Circle from '../../Icons/Circle.jsx';
 export default function RadioPreference({ children, selected, onClick }) {
   return (
     <a
-      href='#'
+      href="#"
       onClick={onClick}
-      className='text-gray-700 hover:text-black dark:text-gray-400 dark:hover:text-gray-200 transition-all duration-200 flex gap-3 text-sm'
+      className="text-gray-700 hover:text-black dark:text-gray-400 dark:hover:text-gray-200 transition-all duration-200 flex gap-3 text-sm"
     >
       {selected ? <RecordCircle /> : <Circle />}
       <p>{children}</p>

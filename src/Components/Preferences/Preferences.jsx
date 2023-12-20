@@ -26,9 +26,9 @@ export default function Preferences({
   }
 
   return (
-    <div className='flex flex-col gap-6'>
-      <a href='#' onClick={handleExpandPreferences}>
-        <h2 className='text-md text-gray-700 hover:text-black dark:text-gray-400 dark:hover:text-gray-200 transition-all duration-200 flex gap-3'>
+    <div className="flex flex-col gap-6">
+      <a href="#" onClick={handleExpandPreferences}>
+        <h2 className="text-md text-gray-700 hover:text-black dark:text-gray-400 dark:hover:text-gray-200 transition-all duration-200 flex gap-3">
           {expandPreferences ? <ChevronBottom /> : <ChevronRight />} Preferences
         </h2>
       </a>

@@ -27,7 +27,7 @@ export default function PreferencesMenu({
   const { firstName } = user;
 
   return (
-    <div className='flex flex-col gap-6'>
+    <div className="flex flex-col gap-6">
       <Preference>
         <InputPreference
           firstName={firstName}
@@ -36,7 +36,7 @@ export default function PreferencesMenu({
           First name:
         </InputPreference>
       </Preference>
-      <p className='dark:text-gray-400 text-sm'>Theme:</p>
+      <p className="dark:text-gray-400 text-sm">Theme:</p>
       <Preference>
         <RadioPreference
           selected={theme === 'os'}
@@ -86,11 +86,11 @@ export default function PreferencesMenu({
           Hide "Deleted to-do." notifications
         </CheckboxPreference>
       </Preference>
-      <p className='dark:text-gray-400 text-sm'>
+      <p className="dark:text-gray-400 text-sm">
         NOTE: If you hide "Deleted to-do." notifications and delete any to-do by
         mistake, you won't be able to recover your last to-do.
       </p>
-      <p className='dark:text-gray-400 text-sm'>Date/Time:</p>
+      <p className="dark:text-gray-400 text-sm">Date/Time:</p>
       <Preference>
         <RadioPreference
           selected={date === 'hide'}
@@ -117,7 +117,7 @@ export default function PreferencesMenu({
           Full
         </RadioPreference>
       </Preference>
-      <p className='dark:text-gray-400 text-sm'>Sort type:</p>
+      <p className="dark:text-gray-400 text-sm">Sort type:</p>
       <Preference>
         <RadioPreference
           selected={sortType === 'date'}
@@ -132,7 +132,7 @@ export default function PreferencesMenu({
           Name
         </RadioPreference>
       </Preference>
-      <p className='dark:text-gray-400 text-sm'>Show todos:</p>
+      <p className="dark:text-gray-400 text-sm">Show todos:</p>
       <Preference>
         <RadioPreference
           selected={showTodos === 'all'}

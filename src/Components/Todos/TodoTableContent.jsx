@@ -97,26 +97,26 @@ export default function TodoTableContent({
   const finalTodos = filteredCompletedTodos;
 
   return (
-    <div className='w-full flex flex-col gap-3'>
+    <div className="w-full flex flex-col gap-3">
       {finalTodos.map((todo) => {
         return (
-          <div className='w-full flex gap-3 md:gap-6' key={todo.id}>
+          <div className="w-full flex gap-3 md:gap-6" key={todo.id}>
             <div
               className={`w-1/12 flex justify-center${
                 dateConditions ? ' mt-2' : ' mt-0'
               }`}
             >
               <a
-                href='#'
+                href="#"
                 onClick={(event) => handleCompleteTodo(event, todo.id)}
-                className='text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all duration-200'
+                className="text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all duration-200"
               >
                 {todo.completed ? <CheckSquare /> : <Square />}
               </a>
             </div>
-            <div className='w-10/12'>
+            <div className="w-10/12">
               <input
-                type='text'
+                type="text"
                 name={todo.id}
                 id={todo.id}
                 value={todo.content}
@@ -143,12 +143,12 @@ export default function TodoTableContent({
               }`}
             >
               <a
-                href='#'
+                href="#"
                 onClick={(event) => {
                   setDeletedTodo(todo);
                   handleDeleteTodo(event, todo.id);
                 }}
-                className='text-gray-300 dark:text-gray-600 hover:text-red-500 dark:hover:text-red-400 transition-all duration-200'
+                className="text-gray-300 dark:text-gray-600 hover:text-red-500 dark:hover:text-red-400 transition-all duration-200"
               >
                 <Trash />
               </a>

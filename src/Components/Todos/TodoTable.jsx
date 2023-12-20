@@ -27,14 +27,14 @@ export default function TodoTable({
   }
 
   return (
-    <div className='w-full flex flex-col gap-3'>
+    <div className="w-full flex flex-col gap-3">
       <div>
-        <h1 className='text-4xl font-bold dark:text-gray-200'>
+        <h1 className="text-4xl font-bold dark:text-gray-200">
           {firstName ? `Hello, ${firstName}` : 'Crema To-Do'}
         </h1>
       </div>
       {todos.length === 0 ? (
-        <p className='dark:text-gray-300'>
+        <p className="dark:text-gray-300">
           You didn't add any to-do. To create your first to-do, type below then
           hit enter or the + sign.
         </p>

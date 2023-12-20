@@ -290,7 +290,7 @@ export default function App() {
 
   return (
     <>
-      <div className='p-6 md:p-12 gap-6 md:gap-12 flex flex-col'>
+      <div className="p-6 md:p-12 gap-6 md:gap-12 flex flex-col">
         <TodoTable
           firstName={data.user.firstName}
           hideSearchBar={data.preferences.hideSearchBar}
@@ -324,7 +324,7 @@ export default function App() {
           handleShowTodos={handleShowTodos}
         />
       </div>
-      <div className='mt-4'></div>
+      <div className="mt-4"></div>
       {!data.preferences.hideBanner && <Banner />}
     </>
   );
